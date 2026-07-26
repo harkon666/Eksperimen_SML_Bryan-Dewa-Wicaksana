@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python 3.12
         uses: actions/setup-python@v4
@@ -28,7 +28,7 @@ jobs:
           python preprocessing/automate_Bryan-Dewa-Wicaksana.py
 
       - name: Upload Processed Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: processed-heart-dataset
           path: preprocessing/dataset_preprocessing/heart_processed.csv
