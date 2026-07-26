@@ -25,10 +25,10 @@ jobs:
 
       - name: Run Automated Preprocessing
         run: |
-          python automate_Bryan-Dewa-Wicaksana.py
+          python preprocessing/automate_Bryan-Dewa-Wicaksana.py
 
       - name: Upload Processed Artifact
         uses: actions/upload-artifact@v3
         with:
           name: processed-heart-dataset
-          path: heart_processed.csv
+          path: preprocessing/dataset_preprocessing/heart_processed.csv
